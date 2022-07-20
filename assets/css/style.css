@@ -46,7 +46,7 @@ section {
 }
 .hero {
     text-align: center;
-    background-image: url(homes.jpg);
+    background-image: url(../../assets/images/homes.jpg);
 }
 .subhead {
     text-transform: uppercase;
