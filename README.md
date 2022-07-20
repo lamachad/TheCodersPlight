@@ -1,2 +1,2 @@
-# TheCodersPlight
-A basic compsci theme quiz- 
+# Purpose
+Front end design of a responsive website.
