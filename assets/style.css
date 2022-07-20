@@ -13,14 +13,14 @@ body {
     background: white;
     padding: 1em;
 }
-.logo {
+.navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
-span {
-    color: var(--primary-color)
+.navbar .logo  span {
+    color: var(--primary-color);
 
 }
 nav {
@@ -192,4 +192,39 @@ nav {
 }
 .secondary-nav li a:hover {
     font-weight: bold; 
+}
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+@media only screen and (min-width: 760px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 150px auto;
+        justify-content: unset;
+    }
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar nav ul {
+        display: flex;
+    }
+    .navbar nav ul a {
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+    ul.primary-nav {
+        margin: 0;
+    }
 }
